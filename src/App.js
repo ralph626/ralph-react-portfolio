@@ -37,7 +37,7 @@ function App() {
         strings: [
           `Hi, my name is Ralph! I'm a fullstack developer.`,
           text,
-          `All of these projects I completed over the Bootcamp`,
+          `All of these projects I completed over the Bootcamp.`,
         ],
         typeSpeed: 30,
       });
@@ -60,6 +60,7 @@ function App() {
               <Card
                 title={project.title}
                 url={project.url}
+                url2={project.url2}
                 desc={project.desc}
               />
             </div>
