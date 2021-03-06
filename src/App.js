@@ -3,23 +3,17 @@ import "./App.css";
 import Typed from "typed.js";
 import Card from "./components/Card";
 import image1 from "./images/project1pic.PNG";
-import image2 from "./images/HomePage.jpg";
-import image3 from "./images/CardView.jpg";
+import image2 from "./images/ParcItHomePage.PNG";
 
 function App() {
   const projects = [
     {
-      title: "Project 1",
+      title: "Project1",
       url: image1,
-      desc: "another description",
     },
     {
-      title: "Home Page",
+      title: "ParcItHomePage",
       url: image2,
-    },
-    {
-      title: "Home Page",
-      url: image3,
     },
   ];
   const [text, setText] = useState(
@@ -32,7 +26,7 @@ function App() {
         strings: [
           `Hi, my name is Ralph! I'm a fullstack developer.`,
           text,
-          "I like to party",
+          `All of these projects I completed over the Bootcamp`,
         ],
         typeSpeed: 30,
       });
