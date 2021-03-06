@@ -4,16 +4,27 @@ import Typed from "typed.js";
 import Card from "./components/Card";
 import image1 from "./images/project1pic.PNG";
 import image2 from "./images/ParcItHomePage.PNG";
+import image3 from "./images/linkedInMainPage.PNG";
 
 function App() {
   const projects = [
     {
-      title: "Project1",
+      title: "Lyrics You Now Know",
       url: image1,
+      desc:
+        "I am an aspiring full-stack developer. Eager to work hard and learn as much as possible.",
+    },
+    {
+      title: "linkedInMainPage",
+      url: image3,
+      desc:
+        "I am excited to work in the industry, I enjoy emerging myself in the field  and to continue learning new ways of creating applications of all kind. ",
     },
     {
       title: "ParcItHomePage",
       url: image2,
+      desc:
+        "I am inspired by what developers can accomplish and anything imagined can be created. ",
     },
   ];
   const [text, setText] = useState(

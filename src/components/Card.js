@@ -15,11 +15,7 @@ export default function Card({ title, url, desc }) {
         {/* <img src={props.url} className="card-img-top" height="300" alt="..." /> */}
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <p className="card-text">
-            {desc ||
-              `Some quick example text to build on the card title and make up the
-            bulk of the card's content. Our easy user friendly take on meet up applications.`}
-          </p>
+          <p className="card-text">{desc || ``}</p>
         </div>
       </div>
     </>
