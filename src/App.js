@@ -5,23 +5,28 @@ import Card from "./components/Card";
 import image1 from "./images/project1pic.PNG";
 import image2 from "./images/ParcItHomePage.PNG";
 import image3 from "./images/linkedInMainPage.PNG";
-
+//the cards title, image, link, and their own descriptions
 function App() {
   const projects = [
     {
       title: "Lyrics You Now Know",
+      linkTitle: "Visit this Repo",
       url: image1,
+      url2: "https://github.com/ralph626/Project-1-Team-5",
       desc:
         "I am an aspiring full-stack developer. Eager to work hard and learn as much as possible.",
     },
     {
-      title: "linkedInMainPage",
+      linkTitle: "Lets Network",
+      title: "My LinkedIn",
       url: image3,
+      url2: "https://www.linkedin.com/in/ralph-orozco-0852721b0/",
       desc:
         "I am excited to work in the industry, I enjoy emerging myself in the field  and to continue learning new ways of creating applications of all kind. ",
     },
     {
       title: "ParcItHomePage",
+      linkTitle: "Visit my GitHub",
       url: image2,
       desc:
         "I am inspired by what developers can accomplish and anything imagined can be created. ",
@@ -59,6 +64,7 @@ function App() {
             <div className="col" key={i}>
               <Card
                 title={project.title}
+                linkTitle={project.linkTitle}
                 url={project.url}
                 url2={project.url2}
                 desc={project.desc}
